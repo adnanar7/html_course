@@ -1,0 +1,13 @@
+<article>
+  <h1>Blog Post</h1>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>Intro content...</p>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>Ending content...</p>
+  </section>
+</article>

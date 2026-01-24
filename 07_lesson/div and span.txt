@@ -1,0 +1,60 @@
+🔹 <div> tag
+
+What it is:
+
+<div> is a block-level container used to group other HTML elements.
+
+It doesn’t add any meaning to the content (non-semantic).
+
+Often used for layout purposes, styling, or scripting.
+
+Key points:
+
+Block-level → starts on a new line
+
+Can contain multiple elements (text, images, other divs)
+
+Example:
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>Welcome to my site!</p>
+</div>
+
+
+🧠 Easy way to remember:
+
+<div> = “a big box for grouping stuff”
+
+🔹 <span> tag
+
+What it is:
+
+<span> is an inline container used to wrap small parts of text or elements.
+
+Like <div>, it is non-semantic, just for styling or scripting.
+
+Key points:
+
+Inline → stays in the same line
+
+Usually used for styling a word or part of text
+
+Example:
+
+<p>This is a <span style="color: red;">red word</span> in a sentence.</p>
+
+
+🧠 Easy way to remember:
+
+<span> = “a small piece of text or element I want to style”
+
+🆚 Difference between <div> and <span>
+Tag	Level	Usage	Example
+div	Block-level	Group larger sections	<div><h1>...</h1></div>
+span	Inline	Style/target small text	<span>red text</span>
+📌 One-line exam answers
+
+Div: Block-level container for grouping elements.
+
+Span: Inline container for styling or targeting small parts of content.

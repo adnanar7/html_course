@@ -60,18 +60,24 @@
                     </details>
                 </aside>
                 <br>
-                <table>
-                    <caption>My Daily Schedule</caption>
-                    <thead>
+                <table>       <!-- Table: Organizes data in rows and columns using tr (row), th (header), and td (cell) -->
+                    <caption>My Daily Schedule</caption>   <!-- Caption: Gives a title or description for the table used to give the semantic meaning -->
+                    <!-- Tr: Defines a row in the table -->
+                    <!-- Td: Defines a regular data cell in the table -->
+                    <!-- Th: Defines a header cell in the table -->
+                    <!-- Table contains rows (tr), and each row contains cells (td for data, th for headers) -->
+
+
+                    <thead>                                <!-- thead: Groups table header rows for semantic meaning and accessibility -->
                         <tr>
-                            <th>&nbsp;</th>
-                            <th scope="col">Time</th>
+                            <th>&nbsp;</th>     <!--SPACE-->
+                            <th scope="col">Time</th>     <!-- Scope attribute : Defines which row, column, or group a header (<th>) applies to for accessibility -->
                             <th scope="col">Activity</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Morning</th>
+                            <th scope="row">Morning</th>  
                             <td>
                                 <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
                             </td>
@@ -95,6 +101,8 @@
                             <th scope="row">Evening</th>
                             <td rowspan="2">All Other Times</td>
                             <td>Free Time</td>
+                            <!-- Rowspan: Makes a table cell span multiple rows -->
+                            <!-- Colspan: Makes a table cell span multiple columns -->
                         </tr>
                         <tr>
                             <th scope="row">Night</th>

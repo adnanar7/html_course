@@ -1,0 +1,44 @@
+🔹 <details> tag
+
+What it is:
+The <details> tag is used to create a collapsible section of content that the user can show or hide.
+
+By default, the content inside <details> is hidden.
+
+When the user clicks, it expands to show the content.
+
+🔹 <summary> tag
+
+What it is:
+The <summary> tag defines a heading or label for the <details> element.
+
+This is the part the user clicks on to expand/collapse the content.
+
+Each <details> can have one <summary>.
+
+🧩 Example
+<details>
+  <summary>Click to read more</summary>
+  <p>This is additional content that is initially hidden. You can expand or collapse it.</p>
+</details>
+
+
+How it works:
+
+“Click to read more” is visible.
+
+The paragraph is hidden until the user clicks the summary.
+
+✅ Key Points
+
+<details> = collapsible container.
+
+<summary> = the clickable heading for that container.
+
+Great for:
+
+FAQs
+
+Terms & conditions
+
+Extra info or tips
