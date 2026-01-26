@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Adnan Farooq">
+        <meta name="description" content="This is my first project of HTML.">
+        <title>My HTML Project</title>
+        <link rel="stylesheet" href="css/style.css" >
+        <link rel="icon" href="favicon.ico">
+
+    </head>
+    <body>
+        <header>
+        <h1>Welcome to The Little Taco Shop</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#aboutLTS">About LTS</a></li>
+                <li><a href="#ourMenu">Our Menu</a></li>
+                <li><a href="/10_lesson_starter/hours.html">Store Hours</a></li>
+                <li><a href="/10_lesson_starter/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+        <figure>
+            <img src="/10_lesson_starter/img/tacos_and_drink_400x267.png" alt="tacos_and_drink_400x267" title="Tacos and a Drink" width="400" height="267" loading="lazy">
+            <figcaption>Tacos and A Drink</figcaption>
+        </figure>
+        <hr>
+
+        <Section id="abooutLTS">
+            <h2>About LTS</h2>
+            <p>LTS was founded in 2022. Our shop was built from a <strong>love of tacos </strong> &#x1F32E; &#x1F32E; &#x1F32E;. We hope our shop adds a unique and interesting place to our little town. </p>
+            <h2>Taco Trivia</h2>
+            <details>
+                <summary>when did tacos first appear in United States ?</summary>
+                <p>In 2005 Tacos first appear in United States</p>
+            </details>
+        </Section>
+
+        <Section id="ourMenu">
+            <h2>Our Menu</h2>
+
+            <table>
+                <caption>Our Tacos</caption>
+                <thead>
+                <tr>
+                    <th scope="col">Tacos</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Crunchy </th>
+                        <td>1</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$3.25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3">Soft</th>
+                        <td>1</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Chips and Salsa $2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </Section>
+
+        </main>
+        <br>
+        <footer>
+            <nav aria-label="secondary-navigation">
+                <a href="#">Back to Top</a>
+            </nav>
+
+            <hr>
+            <p> Copyright &copy; The Little Taco Shop </p>
+
+        </footer>
+    </body>
+    
+</html>
