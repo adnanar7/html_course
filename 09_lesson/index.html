@@ -173,13 +173,54 @@
             <h2>Contact Me</h2>
             <p>I'd really like to hear from you!</p>
 
+            <!-- Form: Collects user input and submits it to a server -->
+            <!-- Fieldset adds semantic meaning by grouping related form elements --> 
+            <!-- Legend: Provides a title for the fieldset, it also provide the semnatic meaning -->
+
+            <!--🔹 action="https://httpbin.org/get"
+
+                This tells the browser where to send the form data.
+
+                Here, the data is sent to httpbin.org.
+
+                httpbin.org is a testing website that simply shows back the data you send (very useful for learning).
+
+                👉 So:
+
+                When the form is submitted, the data goes to this URL.
+
+                🔹 method="get"
+
+                This tells how the data is sent.
+
+                get method:
+
+                Sends data in the URL
+
+                Data is visible in the address bar
+
+                Example:
+
+                https://httpbin.org/get?name=Ali&age=20
+
+
+                👉 Used for:
+
+                Search forms
+
+                Testing
+
+                Non-sensitive data
+
+                ❌ Not good for passwords or private data.-->
+
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
                     <legend>Personal Info</legend>
-                    <p>
+                    <p> <!--p tag will make the form look better.-->
                         <label for="firstName">First Name:</label>
                         <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
-                            autofocus>
+                            autofocus>   <!--see the file for the explaination of these attributes.-->
                     </p>
                     <p>
                         <label for="lastName">Last Name:</label>
@@ -190,16 +231,50 @@
                         <input type="password" name="password" id="password" placeholder="your secret" required>
                     </p>
                     <p>
+                        <!--<input type="tel">
+                        Creates a telephone number input.
+                        On mobile devices, it shows a number keypad.-->
+
+                        <!--🔹 pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                        Adds input validation using a regular expression.
+                        This pattern means:
+                        [0-9]{3} → first 3 digits
+                        [0-9]{3} → next 3 digits
+                        [0-9]{4} → last 4 digits
+                        👉 Total = 10 digits only, no spaces or dashes.-->
+
                         <label for="phone">Phone:</label>
                         <input type="tel" name="phone" id="phone" placeholder="5555555555"
                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
                     </p>
                     <p>
+                        <!--🔹 <input type="number">
+                        Creates a numeric input field.
+                        Allows only numbers.
+                        Shows number controls (up/down arrows).-->
+
+                        <!--
+                        🔹min="1950"
+                        Sets the minimum allowed value.
+                        User cannot enter a number less than 1950.
+
+                        🔹 max="2020"
+                        Sets the maximum allowed value.
+                        User cannot enter a number greater than 2020.
+
+                        🔹 step="10"
+                        The value must increase or decrease by 10.
+                        This fits the idea of decades (1950, 1960, 1970, etc.).
+
+                        🔹 value="1980"
+                        Sets the default value when the page loads.
+                        The input starts with 1980 selected.-->
+
                         <label for="decade">Favorite Decade:</label>
                         <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
                     </p>
                     <p>
-                        <label for="coffee">Favorite Coffee:</label>
+                        <label for="coffee">Favorite Coffee:</label>  <!--see the txt file-->
                         <select name="coffee" id="coffee" multiple size="5">
                             <optgroup label="Coffees">
                                 <option value="regular coffee">Regular Coffee</option>
@@ -214,7 +289,7 @@
                             <option value="other">Other</option>
                         </select>
                     </p>
-                    <!-- <p>
+                    <!-- <p>                                            "another way to create a dropdown list"
                     <label for="coffee">Favorite Coffee:</label>
                     <input type="text" name="coffee" id="coffee" list="coffee-list">
                     <datalist id="coffee-list">
@@ -231,7 +306,7 @@
                 <fieldset>
                     <legend>What is your favorite food?</legend>
                     <p>
-                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <input type="radio" name="food" id="tacos" value="tacos">  <!--type="radio" → user can select only ONE option-->
                         <label for="tacos">Tacos</label>
                     </p>
                     <p>
@@ -247,7 +322,7 @@
                 <fieldset>
                     <legend>Do you have pets?</legend>
                     <p>
-                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <input type="checkbox" name="pets" id="dog" value="dog"> <!--type="checkbox" → user can select multiple options-->
                         <label for="dog">Dog</label>
                     </p>
                     <p>
@@ -268,7 +343,8 @@
                     <legend>Send Me A Note</legend>
                     <label for="message">Your Message:</label>
                     <br>
-                    <textarea name="message" id="message" cols="30" rows="10"
+                    <!--<input> is used for short single-line input, while <textarea> is used for long multi-line text input.-->
+                    <textarea name="message" id="message" cols="30" rows="10"  
                         placeholder="Type your message here"></textarea>
                 </fieldset>
                 <br>
